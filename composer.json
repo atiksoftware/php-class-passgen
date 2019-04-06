@@ -1,0 +1,18 @@
+{
+    "name": "atiksoftware/php-class-passgen",
+    "description": "Generate a spesific username and password for ftp,whm etc. by domain and prefix",
+    "type": "library",
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "Atiksoftware Corporation",
+            "email": "atiksoftware@gmail.com"
+        }
+    ],
+	"require": {},
+	"autoload": {
+        "psr-4" : {
+            "Atiksoftware\\Security\\" : "src"
+		}
+	}
+}
