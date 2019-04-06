@@ -23,4 +23,4 @@ echo $auth["username"]."   ".$auth["password"]."\n";
 $auth = Atiksoftware\Security\Passgen::ForDomain("atiksoftware.com","123456"); 
 echo $auth["username"]."   ".$auth["password"]."\n";
 
-// 4uj0et4d   [0m?/i_j)zqz
+// hydzetm0   w3_m*zdy]m,y
