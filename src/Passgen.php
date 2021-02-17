@@ -12,7 +12,7 @@
 		 * @param integer that size of will create password char count
 		 * @return array will return an array like [ "username" => "ad0w2xc0", "password" => "aj0]AOTgzN*cyO" ]
 		 */
-		static function ForDomain($domain = "", $key = "^A.R%x", $sizeUsername = 8, $sizePassword = 12){
+		static function make($domain = "", $key = "^A.R%x", $sizeUsername = 8, $sizePassword = 12){
 			$specials = ['/','[',')','=',']','.','?','*','(', ',', '_'];
 			$username = "";
 			$password = "";
@@ -58,7 +58,7 @@
 					$tryCount++;
 				}
 			} 
-			return ["username" => $username, "password" => $password];
+			return (object)["username" => $username, "password" => $password];
 		}
 
 
