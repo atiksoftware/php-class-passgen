@@ -14,13 +14,13 @@ composer require atiksoftware/php-class-passgen
 ```php
 require __DIR__.'/../vendor/autoload.php';
 
-$auth = Atiksoftware\Security\Passgen::ForDomain("atiksoftware.com","!%&/xzcas56"); 
-echo $auth["username"]."   ".$auth["password"]."\n";
+$auth = Atiksoftware\Security\Passgen::make("atiksoftware.com","!%&/xzcas56"); 
+echo $auth->username."   ".$auth->password."\n";
 
 // 4uj0et4d   [0m?/i_j)zqz
 
 
 $auth = Atiksoftware\Security\Passgen::ForDomain("atiksoftware.com","123456"); 
-echo $auth["username"]."   ".$auth["password"]."\n";
+echo $auth->username."   ".$auth->password."\n";
 
 // hydzetm0   w3_m*zdy]m,y
